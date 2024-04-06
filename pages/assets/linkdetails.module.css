@@ -1,0 +1,28 @@
+/* LinkDetails.module.css */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: blue;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}

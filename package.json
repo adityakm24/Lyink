@@ -1,0 +1,48 @@
+{
+  "name": "Lyink",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p 8080",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@next-auth/mongodb-adapter": "^1.1.3",
+    "@types/node": "^20.12.5",
+    "axios": "^1.6.8",
+    "bson": "^5.5.1",
+    "chart.js": "^4.4.2",
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.1.4",
+    "express": "^4.19.2",
+    "monday-sdk-js": "^0.5.5",
+    "mongodb": "^5.9.2",
+    "mongodb-connection-string-url": "^3.0.0",
+    "mongoose": "^8.3.0",
+    "next": "14.1.4",
+    "next-auth": "^4.24.7",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "18.2.0",
+    "shortid": "^2.2.16",
+    "smart-buffer": "^4.2.0",
+    "socks": "^2.8.1",
+    "sprintf-js": "^1.1.3",
+    "tr46": "^4.1.1",
+    "typescript": "^5.4.3",
+    "ua-parser-js": "^1.0.37",
+    "undici-types": "^5.26.5",
+    "whatwg-url": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/whatwg-url": "^8.2.2",
+    "cross-env": "^7.0.3"
+  }
+}
