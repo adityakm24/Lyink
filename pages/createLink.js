@@ -11,15 +11,6 @@ export default function Dashboard() {
   const [shortUrls, setShortUrls] = useState([]);
   const { data: session, status } = useSession();
 
-  const handleFetchCurrentUrl = async () => {
-    try {
-      const currentUrl = res.data.href;
-      setDestination(currentUrl);
-    } catch (error) {
-      console.error("Error fetching current URL:", error);
-    }
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -89,13 +80,6 @@ export default function Dashboard() {
             placeholder="Enter URL"
             required
           />
-          <button
-            type="button"
-            onClick={handleFetchCurrentUrl}
-            className={styles.fetchUrlButton}
-          >
-            Fetch Current URL
-          </button>
           <label className={styles.heading}>Title (Optional):</label>
           <input
             type="text"
@@ -116,3 +100,4 @@ export default function Dashboard() {
     </div>
   );
 }
+
