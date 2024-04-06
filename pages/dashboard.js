@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useEffect, useState } from "react";
 import { useSession, signIn } from "next-auth/react";
 import Navbar from "./Navbar"; // Adjust this import according to your project structure
@@ -90,31 +92,30 @@ export default function Dashboard() {
     setEditUrl(null);
   };
 
-const handleUpdate = async () => {
-  try {
-    const response = await fetch(`/api/user/url/update/${editUrl._id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      credentials: "include",
-      body: JSON.stringify(formData), // Send the updated data in the request body
-    });
-    if (response.ok) {
-      const updatedUrl = await response.json(); // Get the updated URL data from the response
-      console.log("URL updated successfully:", updatedUrl);
-      // Update the state with the updated URL data if necessary
-      // For example, you can update the shortUrls state with the updated URL
-    } else {
-      throw new Error("Failed to update URL");
+  const handleUpdate = async () => {
+    try {
+      const response = await fetch(`/api/user/url/update/${editUrl._id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+        body: JSON.stringify(formData), // Send the updated data in the request body
+      });
+      if (response.ok) {
+        const updatedUrl = await response.json(); // Get the updated URL data from the response
+        console.log("URL updated successfully:", updatedUrl);
+        // Update the state with the updated URL data if necessary
+        // For example, you can update the shortUrls state with the updated URL
+      } else {
+        throw new Error("Failed to update URL");
+      }
+    } catch (error) {
+      console.error("Error updating URL:", error);
+    } finally {
+      setEditUrl(null); // Close the edit popup
     }
-  } catch (error) {
-    console.error("Error updating URL:", error);
-  } finally {
-    setEditUrl(null); // Close the edit popup
-  }
-};
-
+  };
 
   if (status === "loading") {
     return <p>Loading...</p>;

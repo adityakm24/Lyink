@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import ShortUrl from "../models/shortUrl";
 import { format } from "date-fns";
+import React from "react";
 import dbConnect from "@/utils/dbConnect";
 import styles from "./assets/LinkDetails.module.css"; // Import CSS styles
 import Chart from "chart.js/auto";

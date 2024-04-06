@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import { useSession, signIn } from "next-auth/react";
 import Navbar from "./Navbar";
@@ -100,4 +101,3 @@ export default function Dashboard() {
     </div>
   );
 }
-

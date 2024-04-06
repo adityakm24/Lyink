@@ -1,1 +1,18 @@
-{"/_app":"pages/_app.js","/Navbar":"pages/Navbar.html","/_error":"pages/_error.js","/[shortUrl]":"pages/[shortUrl].html","/api/auth/[...nextauth]":"pages/api/auth/[...nextauth].js","/api/redirect":"pages/api/redirect.js","/api/user/urls":"pages/api/user/urls.js","/api/shorten":"pages/api/shorten.js","/api/user/url/[id]":"pages/api/user/url/[id].js","/api/user/url/update/[id]":"pages/api/user/url/update/[id].js","/auth/signin":"pages/auth/signin.html","/":"pages/index.html","/createLink":"pages/createLink.html","/dashboard":"pages/dashboard.html","/LinkDetails":"pages/LinkDetails.js","/_document":"pages/_document.js","/404":"pages/404.html"}
+{
+  "/_app": "pages/_app.js",
+  "/Navbar": "pages/Navbar.js",
+  "/[shortUrl]": "pages/[shortUrl].js",
+  "/_error": "pages/_error.js",
+  "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js",
+  "/api/redirect": "pages/api/redirect.js",
+  "/api/user/url/[id]": "pages/api/user/url/[id].js",
+  "/createLink": "pages/createLink.js",
+  "/dashboard": "pages/dashboard.js",
+  "/auth/signin": "pages/auth/signin.js",
+  "/api/shorten": "pages/api/shorten.js",
+  "/api/user/url/update/[id]": "pages/api/user/url/update/[id].js",
+  "/api/user/urls": "pages/api/user/urls.js",
+  "/": "pages/index.js",
+  "/LinkDetails": "pages/LinkDetails.js",
+  "/_document": "pages/_document.js"
+}

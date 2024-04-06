@@ -1,5 +1,6 @@
 // Navbar.js
 import { useState } from "react";
+import React from "react";
 import { signOut } from "next-auth/react";
 import styles from "./assets/navbar.module.css";
 import Image from "next/image";
